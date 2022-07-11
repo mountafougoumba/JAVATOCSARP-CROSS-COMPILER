@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senior_project.TranslatorController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="translatoranchorPane" layoutX="2.0" prefHeight="694.0" prefWidth="768.0">
+          <stylesheets>
+              <URL value="@translator.css" />
+          </stylesheets>
+         <children>
+            <Label alignment="CENTER" layoutX="-2.0" prefHeight="38.0" prefWidth="624.0" text="Welcome to your Java to C# cross Compiler">
+               <font>
+                  <Font name="Times New Roman Italic" size="27.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="38.0" layoutY="61.0" prefHeight="532.0" prefWidth="312.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="28.0" prefHeight="38.0" prefWidth="229.0" text="Java Code">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="javacodetextarea" layoutX="16.0" layoutY="68.0" prefHeight="389.0" prefWidth="296.0" promptText="Enter your java code" />
+                  <Button fx:id="clearjavacodeID" layoutX="251.0" layoutY="483.0" mnemonicParsing="false" onAction="#clearjavacode" prefHeight="27.0" prefWidth="62.0" styleClass="jfx-button" stylesheets="@translator.css" text="Clear" />
+                  <Button fx:id="javacodeontranslateID1" layoutX="15.0" layoutY="483.0" mnemonicParsing="false" onAction="#javacodeontranslateFile" prefHeight="25.0" prefWidth="70.0" styleClass="jfx-button" stylesheets="@translator.css" text="Load File" />
+                  <Button fx:id="savejavacodeID" layoutX="131.0" layoutY="483.0" mnemonicParsing="false" onAction="#Onsavejavacode" prefHeight="27.0" prefWidth="62.0" styleClass="jfx-button" stylesheets="@translator.css" text="Save" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="369.0" layoutY="61.0" prefHeight="545.0" prefWidth="338.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="29.0" prefHeight="38.0" prefWidth="201.0" text="C# Code">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="cchapcodetextarea1" layoutX="22.0" layoutY="67.0" prefHeight="389.0" prefWidth="312.0" promptText="This is the corresponding C# code" />
+                  <Button fx:id="cchapcodeontranslateID" layoutX="142.0" layoutY="485.0" mnemonicParsing="false" onAction="#savecchapcodeFile" prefHeight="25.0" prefWidth="70.0" styleClass="jfx-button" stylesheets="@translator.css" text="Save" />
+                  <Button fx:id="clearclearcodeID" layoutX="274.0" layoutY="485.0" mnemonicParsing="false" onAction="#clearclearcode" prefHeight="25.0" prefWidth="62.0" styleClass="jfx-button" stylesheets="@translator.css" text="Clear" />
+                  <Button fx:id="loadcchapfileID" layoutX="21.0" layoutY="485.0" mnemonicParsing="false" onAction="#Onloadfilecchap" prefHeight="27.0" prefWidth="70.0" styleClass="jfx-button" stylesheets="@translator.css" text="Load File" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="javacodeontranslateID" layoutX="107.0" layoutY="601.0" mnemonicParsing="false" onAction="#javacodeontranslate" prefHeight="47.0" prefWidth="145.0" styleClass="jfx-button" stylesheets="@translator.css" text="Translate to C#" />
+            <Button fx:id="clearjavacodeID1" layoutX="686.0" layoutY="36.0" mnemonicParsing="false" onAction="#onloggout" prefHeight="38.0" prefWidth="70.0" styleClass="jfx-button" stylesheets="@translator.css" text="Logout" />
+            <Button fx:id="CchapcodeontranslateID2" layoutX="477.0" layoutY="601.0" mnemonicParsing="false" onAction="#cChapcodeontranslate" prefHeight="47.0" prefWidth="145.0" styleClass="jfx-button" stylesheets="@translator.css" text="Translate to Java" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

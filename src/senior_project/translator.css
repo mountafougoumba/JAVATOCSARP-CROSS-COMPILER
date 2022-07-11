@@ -1,0 +1,31 @@
+.button:hover{
+    -fx-background-color: black;
+    -fx-text-fill: gray;
+}
+.glyph-icon{
+   -fx-fill: white;
+}
+.button:hover .glyph-icon{
+    -fx-text-fill: red;
+}
+
+.mainFxmlClass {
+    -fx-background-color: black;
+    -fx-background-fills: white;
+}
+
+.jfx-button{
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: wheat;
+    -fx-background-color: black;
+    
+}
+.jfx-button:hover{
+    -fx-background-color: purple;
+}
+
+.glyph-icon{
+   -fx-fill: white;
+}

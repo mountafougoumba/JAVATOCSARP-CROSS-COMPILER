@@ -1,0 +1,14 @@
+// Include namespace system
+using System;
+using System.IO;
+
+
+public class Test
+{
+    public static void Main(String[] args)
+    {
+        var sc =  "Inputs";
+        var x = Console.ReadLine();
+        Console.WriteLine(x);
+    }
+}

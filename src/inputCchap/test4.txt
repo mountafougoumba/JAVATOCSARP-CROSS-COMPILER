@@ -1,0 +1,28 @@
+// Include namespace system
+using System;
+public class PalindromeNumber
+{
+    public static void Main(String[] args)
+    {
+        var r = 0;
+        var sum = 0;
+        int temp;
+        var n = 454;
+        // It is the number variable to be checked for palindrome
+        temp = n;
+        while (n > 0)
+        {
+            r = n % 10;
+            // getting remainder
+            sum = (sum * 10) + r;
+            n = (int)(n / 10);
+        }
+        if (temp == sum)
+        {
+            Console.WriteLine("palindrome number ");
+        }
+        else {
+            Console.WriteLine("not palindrome");
+        }
+    }
+}

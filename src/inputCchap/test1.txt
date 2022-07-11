@@ -1,0 +1,17 @@
+// Include namespace system
+using System;
+public class FactorialNumber
+{
+    public static void Main(String[] args)
+    {
+        var i = 1;
+        var fact = 1;
+        var number = 5;
+        // It is the number to calculate factorial
+        for (i = 1; i <= number; i++)
+        {
+            fact = fact * i;
+        }
+        Console.WriteLine("Factorial of " + number.ToString() + " is: " + fact.ToString());
+    }
+}

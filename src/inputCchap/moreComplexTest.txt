@@ -1,0 +1,81 @@
+// Include namespace system
+using System;
+using System.Threading;
+
+
+
+public class Rectangle
+{
+    private double length;
+    private double width;
+    public Rectangle(double length, double width)
+    {
+        this.length = length;
+        this.width = width;
+    }
+    public double getLength()
+    {
+        return this.length;
+    }
+    public void setLength(double length)
+    {
+        this.length = length;
+    }
+    public double getWidth()
+    {
+        return this.width;
+    }
+    public void setWidth(double width)
+    {
+        this.width = width;
+    }
+    public double perimeter()
+    {
+        return (this.length + this.width) * 2;
+    }
+    public double Area()
+    {
+        return (this.length * this.width);
+    }
+    public int hashCode()
+    {
+        var hash = 5;
+        hash = 71 * hash + (int)(System.BitConverter.DoubleToInt64Bits(this.length) ^ (System.BitConverter.DoubleToInt64Bits(this.length) >> 32));
+        hash = 71 * hash + (int)(System.BitConverter.DoubleToInt64Bits(this.width) ^ (System.BitConverter.DoubleToInt64Bits(this.width) >> 32));
+        return hash;
+    }
+    public bool equals(object obj)
+    {
+        if (this.this == obj)
+        {
+            return true;
+        }
+        if (obj == null)
+        {
+            return false;
+        }
+        if (this.getClass() != obj.GetType())
+        {
+            return false;
+        }
+        final var other = (Rectangle)obj;
+        if (System.BitConverter.DoubleToInt64Bits(this.length) != System.BitConverter.DoubleToInt64Bits(other.length))
+        {
+            return false;
+        }
+        if (System.BitConverter.DoubleToInt64Bits(this.width) != System.BitConverter.DoubleToInt64Bits(other.width))
+        {
+            return false;
+        }
+        return true;
+    }
+    public String toString()
+    {
+        return "Rectangle{" + "length=" + this.length.ToString() + ", width=" + this.width.ToString() + '}'.ToString();
+    }
+    public static void Main(String[] args)
+    {
+        var rectangle = new Rectangle(5, 5);
+        Console.WriteLine(rectangle.toString());
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/Mountafougoumba/Documents/NetBeansProjects/Senior_project/src/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="dist/lib/charm-glisten-6.0.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-commons-9.1.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-fontawesome-4.7.0-9.1.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jfoenix-1.1.0.jar"/>
+	<classpathentry kind="lib" path="dist/Senior_project.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mountafougoumba/Documents/NetBeansProjects/Senior_project/src/lib/antlr4-4.9.2-complete.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

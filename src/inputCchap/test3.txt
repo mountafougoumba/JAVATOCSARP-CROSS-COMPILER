@@ -1,0 +1,14 @@
+// Include namespace system
+using System;
+public class Test
+{
+    public static void Main(String[] args)
+    {
+        var n = 5;
+        // for loop
+        for (int i = 1; i <= n; ++i)
+        {
+            Console.WriteLine("Java is fun");
+        }
+    }
+}
